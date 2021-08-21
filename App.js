@@ -21,6 +21,7 @@ const markers = [...Array(numberMarkers).keys()].map(() => ({
     latitude: getRandomValue(region.latitude, maxSeparation),
     longitude: getRandomValue(region.longitude, maxSeparation),
   },
+  image: {uri: 'egg_marker'},
 }));
 
 const App: () => Node = () => <Map markers={markers} region={region} />;
